@@ -14,9 +14,11 @@ background: white;
 font-family: Montserrat;
 `;
 
-const CityComponent = styled.div`
-  display: flex;
-  flex-direction: column;
+const AppLabel = styled.span`
+color: black;
+margin: 20px auto;
+font-size: 18px;
+font-weight: bold;
 `;
 
 const WeatherComponent = styled.div`
@@ -27,7 +29,7 @@ const WeatherComponent = styled.div`
 function App() {
   return (
     <Container >
-      The Weather App
+      <AppLabel>The Weather App</AppLabel>
       <CityComponent>CityComponent</CityComponent>
       <WeatherComponent>WeatherComponent</WeatherComponent>
     </Container>
