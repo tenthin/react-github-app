@@ -20,11 +20,27 @@ flex-direction: row;
 border: black solid 1px;
 border-radius: 2px;
 color:black;
-font-size: 18px;
-font-weight: bold;
-margin: 10px auto;
-`
+margin: 20px auto;
 
+& input{
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+}
+
+& button{
+    padding: 10px;
+    font-size: 14px;
+    color: white;
+    background-color: black;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    cursor:pointer;
+}
+`
 const CityComponent = () => {
     return (
         <>
