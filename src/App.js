@@ -1,8 +1,28 @@
+import styled from "styled-components";
+
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+const CityComponent = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+const WeatherComponent = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
 function App() {
   return (
-    <div >
+    <Container >
       The Weather App
-    </div>
+      <CityComponent>CityComponent</CityComponent>
+      <WeatherComponent>WeatherComponent</WeatherComponent>
+    </Container>
   );
 }
 
