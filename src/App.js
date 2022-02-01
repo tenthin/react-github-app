@@ -26,7 +26,7 @@ function App() {
   return (
     <Container >
       <AppLabel>The Weather App</AppLabel>
-      <CityComponent/>
+      <WeatherComponent/>
     </Container>
   );
 }
