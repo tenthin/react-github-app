@@ -1,5 +1,6 @@
 import styled from "styled-components";
-
+import CityComponent from "./modules/CityComponent";
+import WeatherComponent from "./modules/WeatherInfoComponent";
 
 const Container = styled.div`
 display: flex;
@@ -21,17 +22,11 @@ font-size: 18px;
 font-weight: bold;
 `;
 
-const WeatherComponent = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
-
 function App() {
   return (
     <Container >
       <AppLabel>The Weather App</AppLabel>
-      <CityComponent>CityComponent</CityComponent>
-      <WeatherComponent>WeatherComponent</WeatherComponent>
+      <CityComponent/>
     </Container>
   );
 }
