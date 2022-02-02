@@ -45,6 +45,42 @@ const WeatherInfoContainer = styled.div`
   flex-wrap: wrap;
 `;
 
+const WeatherContainer = styled.div`
+  display: flex;
+  width: 100%;
+  margin: 30px auto;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+const InfoIcon = styled.img`
+  width: 36px;
+  height: 36px;
+`;
+const InfoLabel = styled.span`
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  margin: 15px;
+  & span {
+    font-size: 12px;
+    text-transform: capitalize;
+  }
+`;
+
+const WeatherInfoComponent = () => {
+    return(
+        <InfoContainer>
+            <InfoIcon/>
+            <InfoLabel>
+
+            </InfoLabel>
+
+        </InfoContainer>
+    )
+}
+
 const WeatherComponent = () => {
     return (
     <>
