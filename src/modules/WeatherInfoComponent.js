@@ -23,6 +23,8 @@ height: 100px;
 margin: 5px auto;
 `
 const Location=styled.span`
+font-size:28px;
+font-weight:bold;
 `
 
 const WeatherComponent = () => {
