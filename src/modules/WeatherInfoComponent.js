@@ -25,7 +25,16 @@ margin: 5px auto;
 const Location=styled.span`
 font-size:28px;
 font-weight:bold;
-`
+`;
+
+const WeatherInfoLabel=styled.span`
+font-size:14px;
+font-weight:bold;
+margin: 20px 25px 10px;
+text-align: start;
+width: 90%;
+
+`;
 
 const WeatherComponent = () => {
     return (
@@ -35,6 +44,7 @@ const WeatherComponent = () => {
         <WeatherLogo src="/icons/cloudy.svg" />
     </WeatherCondition>
     <Location>London, GB</Location>
+    <WeatherInfoLabel>Weather Info</WeatherInfoLabel>
     </>
     )
 }
