@@ -36,6 +36,15 @@ width: 90%;
 
 `;
 
+const WeatherInfoContainer = styled.div`
+  display: flex;
+  width: 90%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+`;
+
 const WeatherComponent = () => {
     return (
     <>
@@ -45,6 +54,12 @@ const WeatherComponent = () => {
     </WeatherCondition>
     <Location>London, GB</Location>
     <WeatherInfoLabel>Weather Info</WeatherInfoLabel>
+    <WeatherInfoContainer>
+        <WeatherInfoComponent/>
+        <WeatherInfoComponent/>
+        <WeatherInfoComponent/>
+        <WeatherInfoComponent/>
+    </WeatherInfoContainer>
     </>
     )
 }
