@@ -2,8 +2,10 @@ import styled from "styled-components";
 import CityComponent from "./modules/CityComponent";
 import WeatherComponent from "./modules/WeatherInfoComponent";
 import React, { useState } from "react";
-import Axios from "axios";
+import axios from "axios";
 
+
+const API_KEY ="0d39b62b7cd230f111955dc73528202e"
 const Container = styled.div`
 display: flex;
 flex-direction: column;
@@ -28,11 +30,20 @@ function App() {
   const [city, updateCity] = useState();
   const [weather, updateWeather] = useState();
 
-  const fetchWeather = () => {}
+  const fetchWeather = async (e) => {
+    e.preventDefault();
+    const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`)
+    
+    updateWeather(response.data)
+  }
   return (
     <Container >
       <AppLabel>The Weather App</AppLabel>
+      {weather ? (
+        <WeatherComponent/>
+      ) : ( 
       <CityComponent updateCity={updateCity} fetchWeather={fetchWeather}/>
+      )}
     </Container>
   );
 }
