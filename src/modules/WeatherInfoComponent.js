@@ -22,6 +22,9 @@ width: 100px;
 height: 100px;
 margin: 5px auto;
 `
+const Location=styled.span`
+`
+
 const WeatherComponent = () => {
     return (
     <>
@@ -29,6 +32,7 @@ const WeatherComponent = () => {
         <Condition><span>30 c</span> | Cloudy</Condition>
         <WeatherLogo src="/icons/cloudy.svg" />
     </WeatherCondition>
+    <Location>London, GB</Location>
     </>
     )
 }
