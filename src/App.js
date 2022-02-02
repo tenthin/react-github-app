@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import CityComponent from "./modules/CityComponent";
 import WeatherComponent from "./modules/WeatherInfoComponent";
+import React, { useState } from "react";
+import Axios from "axios";
 
 const Container = styled.div`
 display: flex;
@@ -23,10 +25,14 @@ font-weight: bold;
 `;
 
 function App() {
+  const [city, updateCity] = useState();
+  const [weather, updateWeather] = useState();
+
+  const fetchWeather = () => {}
   return (
     <Container >
       <AppLabel>The Weather App</AppLabel>
-      <WeatherComponent/>
+      <CityComponent updateCity={updateCity} fetchWeather={fetchWeather}/>
     </Container>
   );
 }
