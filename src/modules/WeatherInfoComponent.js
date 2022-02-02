@@ -1,4 +1,6 @@
+import React from "react";
 import styled from "styled-components";
+import {WeatherIcons} from "../App";
 
 const WeatherCondition = styled.div`
 display: flex;
@@ -54,6 +56,14 @@ const WeatherContainer = styled.div`
   align-items: center;
 `;
 
+const InfoContainer = styled.div`
+  display: flex;
+  margin: 5px 10px;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+`;
+
 const InfoIcon = styled.img`
   width: 36px;
   height: 36px;
@@ -72,7 +82,7 @@ const InfoLabel = styled.span`
 const WeatherInfoComponent = () => {
     return(
         <InfoContainer>
-            <InfoIcon/>
+            <InfoIcon src="icons/temp.svg" />
             <InfoLabel>
 
             </InfoLabel>
